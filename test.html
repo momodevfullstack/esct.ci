@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog - ESCT</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    /* Custom CSS for enhanced styling */
+    body {
+      font-family: 'Arial', sans-serif;
+    }
+
+    .navbar {
+      background-color: #2C3E50;
+    }
+
+    .navbar-brand, .nav-link {
+      color: #ecf0f1 !important;
+      text-transform: uppercase;
+    }
+
+    .navbar-brand:hover, .nav-link:hover {
+      color: #3498DB !important;
+    }
+
+    header {
+      background: linear-gradient(45deg, #3498DB, #2ECC71);
+      color: white;
+      padding: 60px 0;
+    }
+
+    header h1 {
+      font-size: 3.5rem;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 1.2rem;
+    }
+
+    .btn-light {
+      background-color: #ffffff;
+      color: #3498DB;
+      font-weight: bold;
+    }
+
+    .btn-light:hover {
+      background-color: #ecf0f1;
+      color: #2C3E50;
+    }
+
+    .card {
+      border: none;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s, box-shadow 0.3s;
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .card-title {
+      font-weight: bold;
+      color: #2C3E50;
+    }
+
+    .card-text {
+      color: #7F8C8D;
+    }
+
+    footer {
+      background-color: #2C3E50;
+      color: white;
+      padding: 20px 0;
+    }
+
+    footer a {
+      color: #3498DB;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">ESCT</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#">Accueil</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">À propos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Formations</a></li>
+          <li class="nav-item"><a class="nav-link active" href="#">Blog</a></li>
+          <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Header -->
+  <header class="text-center">
+    <div class="container">
+      <h1>Bienvenue sur le Blog d'ESCT</h1>
+      <p>Découvrez nos actualités, conseils et ressources pour réussir dans le secteur de la construction.</p>
+      <a href="#articles" class="btn btn-light btn-lg mt-3">Explorer les articles</a>
+    </div>
+  </header>
+
+  <!-- Articles -->
+  <main class="container my-5" id="articles">
+    <div class="row">
+      <!-- Article vedette -->
+      <div class="col-lg-12 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/1200x400" class="card-img-top rounded-top" alt="Article vedette">
+          <div class="card-body">
+            <h2 class="card-title">Comment se préparer efficacement pour une carrière dans le BTP ?</h2>
+            <p class="card-text">Découvrez des conseils pratiques pour débuter dans le secteur et tirer le meilleur parti de nos formations.</p>
+            <a href="#" class="btn btn-primary">Lire la suite</a>
+          </div>
+        </div>
+      </div>
+
+      <!-- Liste d'articles -->
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Article 1">
+          <div class="card-body">
+            <h5 class="card-title">Les avantages du Bachelor chargé de travaux BTP</h5>
+            <p class="card-text">Explorez les opportunités qu'offre cette formation diplômante.</p>
+            <a href="#" class="btn btn-outline-primary">En savoir plus</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Article 2">
+          <div class="card-body">
+            <h5 class="card-title">Nos astuces pour réussir votre pré-inscription à l’ESCT</h5>
+            <p class="card-text">Simplifiez votre processus d’inscription grâce à nos conseils détaillés.</p>
+            <a href="#" class="btn btn-outline-primary">Lire l'article</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-4 mb-4">
+        <div class="card">
+          <img src="https://via.placeholder.com/400x250" class="card-img-top" alt="Article 3">
+          <div class="card-body">
+            <h5 class="card-title">Découvrez les innovations pédagogiques de l'ESCT</h5>
+            <p class="card-text">L'ESCT intègre des technologies innovantes pour former les leaders de demain.</p>
+            <a href="#" class="btn btn-outline-primary">Voir plus</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container text-center">
+      <p class="mb-0">© 2024 ESCT. Tous droits réservés.</p>
+      <div>
+        <a href="#">Mentions légales</a> | 
+        <a href="#">Politique de confidentialité</a> | 
+        <a href="#">Contactez-nous</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
